@@ -27,6 +27,6 @@ SavePICT/o/P=filepath/E=-5/B=288/win=graph2 as "z_psf.png"
 fwhm[0] = x_psf[3]
 fwhm[1] = y_psf[3]
 fwhm[2] = z_psf[3]
-fwhm = fwhm*2.3548
+fwhm = fwhm*2.3548/(2^0.5)
 Save/o/T/P=filepath x_psf,y_psf,z_psf,fwhm as "x_psf++.itx"
 endmacro
